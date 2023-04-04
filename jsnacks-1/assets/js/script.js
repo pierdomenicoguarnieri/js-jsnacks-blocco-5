@@ -58,11 +58,11 @@ const container2 = document.getElementById("underage");
 const over65 = users.filter((user) =>{
   if(user.age >= 65){
     container1.innerHTML +=`
-    <div class="card" style="width: 18rem;">
-    <div class="card-body">
-    <h5 class="card-title">${user.name} ${user.surname}</h5>
-    <p class="card-text">Età: ${user.age}</p>
-    </div>
+    <div class="card shadow-sm" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">${user.name} ${user.surname}</h5>
+        <p class="card-text">Età: ${user.age}</p>
+      </div>
     </div>
     `
     return user;
@@ -74,11 +74,11 @@ const over65 = users.filter((user) =>{
 const underage = users.filter((user) => {
   if(user.age < 18){
     container2.innerHTML +=`
-    <div class="card" style="width: 18rem;">
-    <div class="card-body">
-    <h5 class="card-title">${user.name} ${user.surname}</h5>
-    <p class="card-text">Età: ${user.age}</p>
-    </div>
+    <div class="card shadow-sm" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">${user.name} ${user.surname}</h5>
+        <p class="card-text">Età: ${user.age}</p>
+      </div>
     </div>
     `
     return user;

@@ -2,3 +2,12 @@
   height: 300px;
   object-fit: cover;
 }
+
+.pg-image-container{
+  overflow: hidden;
+}
+
+.pg-image-container img:hover{
+  transform: scale(1.2);
+  transition: all .5s;
+}
