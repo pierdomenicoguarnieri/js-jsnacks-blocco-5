@@ -40,3 +40,16 @@ const users =[
     surname:"Romano",
   }
 ];
+
+const randomMatricola = () => Math.floor(Math.random()* (99999 - 10000 + 1) + 10000);
+
+const randomVoto = () => {
+  const votes = [];
+  for(let i = 0; i < 10; i++){
+    votes[i] = Math.floor(Math.random() * (30 - 18 + 1) + 18);
+  }
+  return votes;
+};
+users.map(user => user.matricola = randomMatricola());
+
+users.map(user => user.voti = randomVoto());
