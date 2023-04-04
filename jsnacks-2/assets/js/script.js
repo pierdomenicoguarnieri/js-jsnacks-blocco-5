@@ -41,6 +41,10 @@ const users =[
   }
 ];
 
+const container1 = document.getElementById("database");
+
+const container2 = document.getElementById("results");
+
 const randomMatricola = () => Math.floor(Math.random()* (99999 - 10000 + 1) + 10000);
 
 const randomVoto = () => {
@@ -65,3 +69,31 @@ users.map(user => user.matricola = randomMatricola());
 users.map(user => user.voti = randomVoto());
 
 const newUsers = users.map(user => ({nomeCompleto: `${user.name} ${user.surname}`, matricola: user.matricola, mediaVoti: getMedia(user.voti)}));
+
+users.map((user) =>{
+  container1.innerHTML +=`
+  <div class="card" style="width: 18rem;">
+  <div class="card-body">
+  <h5 class="card-title">${user.name} ${user.surname}</h5>
+  <p class="card-text">Marticola: ${user.matricola}</p>
+  <p class="card-text">Voti: ${user.voti}</p>
+  </div>
+  </div>
+  `
+  return user;
+});
+
+
+
+newUsers.map((user) => {
+  container2.innerHTML +=`
+  <div class="card" style="width: 18rem;">
+  <div class="card-body">
+  <h5 class="card-title">${user.nomeCompleto}</h5>
+  <p class="card-text">Matricola: ${user.matricola}</p>
+  <p class="card-text">Media voti: ${user.mediaVoti}</p>
+  </div>
+  </div>
+  `
+  return user;
+});
