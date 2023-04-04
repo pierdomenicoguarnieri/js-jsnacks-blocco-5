@@ -3,6 +3,10 @@
   object-fit: cover;
 }
 
+.card{
+  cursor: pointer;
+}
+
 .pg-image-container{
   overflow: hidden;
 }

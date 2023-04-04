@@ -81,7 +81,10 @@ users.map(user => user.voti = randomVoto());
 users.forEach((user) =>{
   container1.innerHTML +=`
   <div class="card shadow-sm" style="width: 18rem;">
-  <img src="assets/img/${user.image}" class="card-img-top pg-max-height" alt="${user.name} ${user.surname}" title="${user.name} ${user.surname}">
+  <div class="pg-image-container rounded-top-1">
+    <img src="assets/img/${user.image}" class="card-img-top pg-max-height" alt="${user.name} ${user.surname}" title="${user.
+    name} ${user.surname}">
+  </div>
     <div class="card-body">
       <h5 class="card-title">${user.name} ${user.surname}</h5>
       <p class="card-text">Marticola: ${user.matricola}</p>
@@ -105,7 +108,9 @@ const newUsers = users.map(user => ({nomeCompleto: `${user.name} ${user.surname}
 newUsers.forEach((user) => {
   container2.innerHTML +=`
   <div class="card shadow-sm" style="width: 18rem;">
-  <img src="assets/img/${user.image}" class="card-img-top pg-max-height" alt="${user.nomeCompleto}" title="${user.nomeCompleto}">
+  <div class="pg-image-container rounded-top-1">
+    <img src="assets/img/${user.image}" class="card-img-top pg-max-height" alt="${user.nomeCompleto}" title="${user.nomeCompleto}">
+    </div>
     <div class="card-body">
       <h5 class="card-title">${user.nomeCompleto}</h5>
       <p class="card-text">Matricola: ${user.matricola}</p>
