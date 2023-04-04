@@ -50,6 +50,18 @@ const randomVoto = () => {
   }
   return votes;
 };
+
+const getMedia = (voti) => {
+  let sum = 0;
+  for(let i = 0; i < voti.length; i++){
+    sum += voti[i];
+  }
+  const media = sum/voti.length;
+  return media;
+};
+
 users.map(user => user.matricola = randomMatricola());
 
 users.map(user => user.voti = randomVoto());
+
+const newUsers = users.map(user => ({nomeCompleto: `${user.name} ${user.surname}`, matricola: user.matricola, mediaVoti: getMedia(user.voti)}));
