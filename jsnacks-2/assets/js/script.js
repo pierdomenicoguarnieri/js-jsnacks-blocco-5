@@ -32,7 +32,7 @@ const users =[
     surname:"Calabresi",
   },
   {
-    name: "Alessabdro",
+    name: "Alessandro",
     surname:"Sagese",
   },
   {

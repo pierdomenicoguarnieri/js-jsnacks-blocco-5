@@ -40,7 +40,7 @@ const users =[
     age: 78
   },
   {
-    name: "Alessabdro",
+    name: "Alessandro",
     surname:"Sagese",
     age: 77
   },
