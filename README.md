@@ -66,3 +66,10 @@ Aggiungere la foto o l’avatar dello studente e stampare tutti gli studenti con
 
 ## References
 
+[W3Schools .sort()](https://www.w3schools.com/jsref/jsref_sort.asp)
+
+[Developer Mozzilla .sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
+
+[JavaScript Tutorial .sort()](https://www.javascripttutorial.net/array/javascript-sort-an-array-of-objects/)
+
+[freeCodeCamp .sort()](https://www.freecodecamp.org/news/how-to-sort-alphabetically-in-javascript/)
