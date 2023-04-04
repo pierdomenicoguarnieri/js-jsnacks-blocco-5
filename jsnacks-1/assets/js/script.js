@@ -50,3 +50,8 @@ const users =[
     age: 22
   }
 ];
+
+const over65 = users.filter((user) =>{
+  if(user.age >= 65){
+    return user;
+  }
