@@ -74,3 +74,12 @@ const getMedia = (voti) => {
 users.map(user => user.matricola = randomMatricola());
 
 users.map(user => user.voti = randomVoto());
+
+users.sort((a, b) => {
+  let surnameA = a.surname.toLowerCase();
+  let surnameB = b.surname.toLowerCase();
+  
+  if (surnameA < surnameB) return -1;
+  if (surnameA > surnameB) return 1;
+  return 0;
+});
