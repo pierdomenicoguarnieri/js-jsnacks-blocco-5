@@ -70,7 +70,7 @@ users.map(user => user.voti = randomVoto());
 
 const newUsers = users.map(user => ({nomeCompleto: `${user.name} ${user.surname}`, matricola: user.matricola, mediaVoti: getMedia(user.voti)}));
 
-users.map((user) =>{
+users.forEach((user) =>{
   container1.innerHTML +=`
   <div class="card" style="width: 18rem;">
   <div class="card-body">
@@ -80,12 +80,9 @@ users.map((user) =>{
   </div>
   </div>
   `
-  return user;
 });
 
-
-
-newUsers.map((user) => {
+newUsers.forEach((user) => {
   container2.innerHTML +=`
   <div class="card" style="width: 18rem;">
   <div class="card-body">
@@ -95,5 +92,4 @@ newUsers.map((user) => {
   </div>
   </div>
   `
-  return user;
 });
