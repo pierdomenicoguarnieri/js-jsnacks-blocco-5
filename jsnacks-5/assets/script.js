@@ -25,3 +25,6 @@ const biciclette = [
 const getRandomWeight = () => parseFloat((Math.random() * (5 - .5) +.5).toFixed(2));
 
 biciclette.map(bicicletta => bicicletta.peso = getRandomWeight());
+
+const minWeight = biciclette.reduce((prev, curr) => prev.peso < curr.peso ? prev : curr);
+
