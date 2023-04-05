@@ -76,6 +76,7 @@ Stampare in pagina oltre che in console!
 
 
 **Seps jSnacks 4:**
+
 1. Creare una lista contenente il loro nome tutto in maiuscolo.
 
 2. Creare una lista di tutti gli studenti che hanno un totale di voti superiore a 70
