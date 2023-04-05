@@ -154,3 +154,5 @@ Stampare in pagina oltre che in console!
 [JavaScript Tutorial .sort()](https://www.javascripttutorial.net/array/javascript-sort-an-array-of-objects/)
 
 [freeCodeCamp .sort()](https://www.freecodecamp.org/news/how-to-sort-alphabetically-in-javascript/)
+
+[StackOverflow Compare JavaScript Array of Objects to Get Min/Max](https://stackoverflow.com/questions/8864430/compare-javascript-array-of-objects-to-get-min-max)
