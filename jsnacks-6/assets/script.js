@@ -41,3 +41,7 @@ const squadre = [
   },
 ];
 
+
+const randomPoints = () => Math.floor(Math.random()*85)+1;
+
+const randomFouls = () => Math.floor(Math.random() * (120 - 30 +1) + 30);
