@@ -35,3 +35,5 @@ const students = [
   sommaVoti: 84,
   }
 ];
+
+const studentsVotes70 = students.filter(student => student.sommaVoti > 70)
