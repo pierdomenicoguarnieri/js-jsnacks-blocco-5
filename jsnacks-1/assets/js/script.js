@@ -51,9 +51,22 @@ const users =[
   }
 ];
 
+const containerAll = document.getElementById("allUsers");
+
 const container1 = document.getElementById("over65");
 
 const container2 = document.getElementById("underage");
+
+users.forEach((user) =>{
+  containerAll.innerHTML +=`
+  <div class="card shadow-sm" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">${user.name} ${user.surname}</h5>
+      <p class="card-text">Età: ${user.age}</p>
+    </div>
+  </div>
+  `
+});
 
 const over65 = users.filter((user) =>{
   if(user.age >= 65){
@@ -68,8 +81,6 @@ const over65 = users.filter((user) =>{
     return user;
   }
 });
-
-
 
 const underage = users.filter((user) => {
   if(user.age < 18){
