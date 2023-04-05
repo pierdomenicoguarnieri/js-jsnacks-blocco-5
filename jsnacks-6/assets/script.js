@@ -51,3 +51,10 @@ squadre.map(squadra => {
   squadra.falliSubiti = randomFouls();
   return squadra;
 });
+
+const newSquadre = squadre.map(squadra => {
+  const{nome, puntiFatti, falliSubiti} = squadra;
+  const object ={nome, falliSubiti,};
+  return object;
+})
+
