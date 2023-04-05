@@ -36,7 +36,54 @@ const students = [
   }
 ];
 
+const container1 = document.getElementById("class");
+
+const container2 = document.getElementById("sum70");
+
+const container3 = document.getElementById("sum70id120");
+
+students.forEach(student => {
+  const{id, nome, sommaVoti} = student;
+  
+  container1.innerHTML +=`
+  <div class="card shadow-sm" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">${nome.toUpperCase()}</h5>
+      <p class="card-text">Id Studente: ${id}</p>
+      <p class="card-text">Somma dei voti: ${sommaVoti}</p>
+    </div>
+  </div>
+`
+})
+
 const studentsVotes70 = students.filter(student => student.sommaVoti > 70)
 
+studentsVotes70.forEach(student => {
+  const{id, nome, sommaVoti} = student;
+
+  container2.innerHTML +=`
+    <div class="card shadow-sm" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">${nome.toUpperCase()}</h5>
+        <p class="card-text">Id Studente: ${id}</p>
+        <p class="card-text">Somma dei voti: ${sommaVoti}</p>
+      </div>
+    </div>
+  `
+})
 
 const studentsId120 = studentsVotes70.filter(student => student.id > 120);
+
+studentsId120.forEach(student =>{
+  const{id, nome, sommaVoti} = student;
+
+  container3.innerHTML +=`
+    <div class="card shadow-sm" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">${nome.toUpperCase()}</h5>
+        <p class="card-text">Id Studente: ${id}</p>
+        <p class="card-text">Somma dei voti: ${sommaVoti}</p>
+      </div>
+    </div>
+  `
+})
