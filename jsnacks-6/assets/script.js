@@ -56,8 +56,8 @@ squadre.map(squadra => {
 });
 
 const newSquadre = squadre.map(squadra => {
-  const{nome, puntiFatti, falliSubiti} = squadra;
-  const object ={nome, falliSubiti,};
+  const{nome, falliSubiti} = squadra;
+  const object = {nome, falliSubiti,};
   return object;
 })
 
